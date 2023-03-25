@@ -136,12 +136,13 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-grey);
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
-.line::after{
+.line::after {
     content: "";
-    display: block;
     position: absolute;
     transform: translateY(-125%);
     width: 100%;
