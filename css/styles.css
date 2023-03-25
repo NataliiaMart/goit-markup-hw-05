@@ -139,9 +139,10 @@ address {
     display: flex;
     align-items: center;
     position: relative;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
-.line::after {
+.line:after {
     content: "";
     position: absolute;
     transform: translateY(-125%);
@@ -153,12 +154,11 @@ address {
     background-color: var(--color-ocean);
 }
 
-
 .pages:hover {
     color: var(--color-ocean);
     transition: color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   
+
 }
 
 .pages:focus {
@@ -671,6 +671,30 @@ address {
     row-gap: 48px;
     margin-top: 72px;
     cursor: pointer
+}
+
+.portfolio-item:hover .portfolio-cover-text {
+   transform: translateY(0);
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-top-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-cover-text {
+    position: absolute;
+    top: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-cloud);
+    background-color: var(--color-iris);
+    height: 100%;
+    padding: 40px 32px;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
 }
 
 .portfolio-link {
