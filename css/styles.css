@@ -69,6 +69,7 @@ address {
     display: flex;
     align-items: center;
     gap: 40px;
+    
 }
 
 .header-conteiner {
@@ -77,7 +78,7 @@ address {
 }
 
 .header-nav {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin-right: auto;
 }
@@ -135,14 +136,34 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-grey);
+    position: relative;
 }
+
+.line::after{
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateY(-125%);
+    width: 100%;
+    height: 4px;
+    top: 44px;
+    left: 0;
+    border-radius: 2px;
+    border-color: var(--color-ocean);
+}
+
 
 .pages:hover {
     color: var(--color-ocean);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .pages:focus {
     color: var(--color-ocean);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----ADDERESS-----*/
@@ -163,6 +184,8 @@ address {
 .header-item:hover,
 .header-item:focus {
     color: var(--color-ocean);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-------HERO--------*/
@@ -217,6 +240,8 @@ address {
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--color-ocean);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -372,10 +397,14 @@ address {
 
 .team-soc-link:hover {
     background-color: var(--color-ocean);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:focus {
     background-color: var(--color-ocean);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-------CUSTOMERS----*/
@@ -397,6 +426,7 @@ address {
     gap: 24px;
 
 }
+
 .customers-item {
     flex-basis: calc((100% - 120px) / 6);
 }
@@ -408,7 +438,7 @@ address {
     height: 88px;
     border-radius: 4px;
     border: 1px solid var(--color-light-slate);
-    padding: 10px;  
+    padding: 10px;
     color: var(--color-light-slate);
 }
 
@@ -419,12 +449,16 @@ address {
 .customers-link:hover {
     border: 1px solid var(--color-ocean);
     color: var(--color-ocean);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .customers-link:focus {
     border: 1px solid var(--color-ocean);
     color: var(--color-ocean);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -531,10 +565,14 @@ address {
 
 .footer-social-link:hover {
     background-color: var(--color-green);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:focus {
     background-color: var(--color-green);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------PORTFOLIO----*/
@@ -590,7 +628,7 @@ address {
     padding-right: 24px;
     border: 1px solid var(--color-cornflower);
     border-radius: 4px;
-    
+
 }
 
 .portfolio-filters-item {
@@ -606,6 +644,8 @@ address {
     color: #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-filters-item :focus {
@@ -613,6 +653,8 @@ address {
     color: #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----PROJECT-----*/
@@ -634,8 +676,11 @@ address {
     display: block;
 }
 
-.portfolio-link:hover, .portfolio-link:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:is(:hover, :focus) .portfolio-item {
