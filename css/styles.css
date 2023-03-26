@@ -155,8 +155,7 @@ address {
     left: 0;
     border-radius: 2px;
     background-color: var(--color-ocean);
-    transition: background-color 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .pages:hover {
@@ -177,6 +176,7 @@ address {
     left: 0;
     border-radius: 2px;
     background-color: var(--color-ocean);
+    
 }
 
 .pages:focus::after {
