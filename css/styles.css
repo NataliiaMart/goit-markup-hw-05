@@ -227,7 +227,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--color-wite);
-    background: var(--color-iris);
+    background-color: var(--color-iris);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     display: block;
